@@ -1,0 +1,3 @@
+jQuery(document).ready(function(){jQuery(window).resize(function(){this.mpGridGalleryResizeTimeout&&clearTimeout(this.mpGridGalleryResizeTimeout);this.mpGridGalleryResizeTimeout=setTimeout(function(){jQuery(this).trigger("mpGridGalleryResizeEnd")},500)});jQuery(window).on("mpGridGalleryResizeEnd",function(){mpRecalcGridGalleryMargins()})});
+function mpRecalcGridGalleryMargins(a){"undefined"===typeof a&&(a=jQuery(".smue-grid-gallery-obj.smue-grid-gallery-need-recalc"));a.length&&a.each(function(a,b){var c=jQuery(jQuery(b).find('[class*="sm-span"]').get(1)).css("margin-left");jQuery(b).find(".sm-row-fluid").not(":first.sm-row-fluid").css("margin-top",c)})};
+
