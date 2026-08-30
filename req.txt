@@ -1,3 +1,54 @@
 whatsapp integration
 linkedin
 no flages fastners
+main page carousel images cha
+
+To run a cloud-backed agent in VS Code Copilot Chat using Ollama Cloud instead of your local machine's hardware, you can utilize VS Code's native Bring Your Own Key (BYOK) framework. This setup ensures your computer handles zero heavy AI math locally, and your cloud-based token requests do not count against your primary GitHub Copilot credit quotas. [1, 2, 3] 
+## Step 1: Link your Ollama Client to the Cloud
+Ensure your local Ollama CLI acts purely as an authenticated pipeline router to the cloud servers. [4] 
+
+   1. Open your computer's terminal.
+   2. Log into your account using the Ollama Cloud Authentication command:
+   
+   ollama login
+   
+   3. Verify your cloud-linked inventory is visible on your machine:
+   
+   ollama list
+   
+   [4] 
+
+## Step 2: Enable BYOK Models in VS Code Agent Host
+VS Code strictly isolates agentic permissions (like terminal execution or file writing) for external models. You must grant permission for external BYOK models to run inside the Copilot Agent Window. [1, 5] 
+
+   1. Open Settings in VS Code (Ctrl+, or Cmd+,).
+   2. Search for the following configuration rule:
+   chat.agentHost.byokModels.enabled
+   3. Check the box to enable it.
+   (Note: If you use VS Code Insiders, make sure to toggle this setting there as well). [5] 
+
+## Step 3: Link Ollama to the Copilot Model Picker
+Add the authenticated Ollama framework directly into the Copilot UI. [6] 
+
+   1. Open the VS Code Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
+   2. Type and select Language Models: Manage Providers (or open the Language Models Editor).
+   3. Click Add Provider and select Ollama from the native dropdown menu.
+   4. Ensure it maps to your routing pipeline (usually defaults to http://localhost:11434). [6, 7] 
+
+## Step 4: Switch Models When Credits Run Out
+Once configured, you can swap between models seamlessly within the same interface. [6] 
+
+   1. Open your Copilot Chat panel (Ctrl+Shift+I or Cmd+Shift+I).
+   2. Look at the bottom input bar and click on the Model Picker Dropdown.
+   3. Scroll past the standard Copilot models to the Ollama Cloud section.
+   4. Select your preferred cloud model (e.g., kimi-k2.5:cloud or qwen2.5-coder:cloud).
+   5. Toggle your Chat panel execution option from Ask to Agent Mode to allow the cloud model to write and refactor code directly in your workspace. [1, 4, 5, 6, 8, 9, 10] 
+
+------------------------------
+If your models don't immediately show up, let me know:
+
+* 
+* Are your Ollama cloud models failing to appear in the Model Picker dropdown?
+* Do you need help configuring a third-party cloud provider like OpenRouter via an OpenAI-compatible endpoint?
+* Are you getting an authentication or permission error when entering Agent Mode? [3, 5, 10, 11] 
+* 

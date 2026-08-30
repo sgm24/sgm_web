@@ -10,4 +10,6 @@ Do not clutter while generating code, keep the file decluttered and readable.
 
 Please keep the design responsive, and exclude ANY and ALL PII (personally identifiable information) by replacing it with a placeholder data.
 
+Add lazy loading to pages, the website loading time and stuff needs to be FAST.
+
 <!-- END:nextjs-agent-rules -->

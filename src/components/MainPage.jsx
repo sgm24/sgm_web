@@ -7,7 +7,7 @@ import Industries from "./Industries";
 import Intro from "./Intro";
 import Services from "./Services";
 
-const asset = (name) => `/sgm_ref/Industrial Valves & Carbon Graphite Products_files/${name}`;
+const asset = (name) => `/sgm_ref_main/Industrial Valves & Carbon Graphite Products_files/${name}`;
 
 const services = [
 	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "processpiping_4tYq.jpg" },
