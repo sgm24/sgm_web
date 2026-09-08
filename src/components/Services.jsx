@@ -15,7 +15,7 @@ export default function Services({ asset, services }) {
                 <p className="font-medium text-xl">We supply Electrical & Mechanical Industrial Products, Our Major Products are:</p>
             </div>
             <div className="service-grid">{services.map((service) => <article className="service-card" key={service.number}>
-                <div className="service-image"><Image src={asset(service.image)} alt={`${service.title} in an industrial setting`} fill sizes="(max-width: 800px) 100vw, 33vw" />
+                <div className="service-image"><Image src={asset(service.image)} alt={`${service.title} in an industrial setting`} fill quality={90} sizes="(max-width: 800px) 100vw, 33vw" />
                 </div>
                 <div className="service-content"><span className="service-number">{service.number}</span>
                 <h3>{service.title}</h3>

@@ -7,7 +7,7 @@ export default function Header({ asset }) {
       <header className="site-header">
         <div className="container header-inner">
           <Link className="brand" href="/" aria-label="SGM Corporations home">
-            <Image src={asset("headerLogo_4tYq.png")} alt="SGM Corporations" width={168} height={66} priority />
+            <Image src="/photos/400dpiLogoCropped.png" alt="SGM Corporations" width={168} height={66} priority />
           </Link>
           <nav className="main-nav" aria-label="Main navigation">
             <Link href="/" className="active">Home</Link>

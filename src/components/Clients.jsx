@@ -9,7 +9,7 @@ export default function Clients({ asset, clients }) {
             <p>Long-term relationships built on dependable supply and straight answers.</p>
             </div>
             <div className="client-grid">{clients.map(([image, name]) => 
-                <div className="client-logo" key={name}><Image src={asset(image)} alt={name} width={190} height={88} /></div>)}
+                <div className="client-logo" key={name}><Image src={asset(image)} alt={name} width={190} height={88} quality={90} /></div>)}
             </div>
         </div>
     </section>;

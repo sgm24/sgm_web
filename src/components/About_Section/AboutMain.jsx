@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "../Header";
 import Footer from "../Footer";
 
-const asset = (name) => `/sgm_ref_main/Industrial Valves & Carbon Graphite Products_files/${name}`;
+const asset = (name) => `/photos/${name}`;
 
 const productList = [
   "Gate Valve",

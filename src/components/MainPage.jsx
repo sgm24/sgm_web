@@ -7,12 +7,12 @@ import Industries from "./Industries";
 import Intro from "./Intro";
 import Services from "./Services";
 
-const asset = (name) => `/sgm_ref_main/Industrial Valves & Carbon Graphite Products_files/${name}`;
+const asset = (name) => `/photos/${name}`;
 
 const services = [
-	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "processpiping_4tYq.jpg" },
-	{ number: "02", title: "Flanges & fasteners", text: "A dependable supply of essential connection hardware for critical infrastructure.", image: "power-generation_4tYq.jpg" },
-	{ number: "03", title: "Carbon products", text: "Engineered carbon components selected for performance, durability and service life.", image: "Coal_Ind_4tYq.jpg" },
+	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "Cement plant.jpg" },
+	{ number: "02", title: "Flanges & fasteners", text: "A dependable supply of essential connection hardware for critical infrastructure.", image: "Power generation 2.jpg" },
+	{ number: "03", title: "Carbon products", text: "Engineered carbon components selected for performance, durability and service life.", image: "cement_plant_121115.jpg" },
 ];
 
 const clients = [
@@ -24,7 +24,7 @@ const clients = [
 export default function MainPage() {
 	const jsonLd = {
 		"@context": "https://schema.org", "@type": "Organization", name: "SGM Corporations",
-		url: "https://www.sgmcorporations.com/", logo: asset("headerLogo_4tYq.png"),
+		url: "https://www.sgmcorporations.com/", logo: asset("400dpiLogoCropped.png"),
 		email: "sales@sgmcorporations.com", telephone: "+91 98503 39010",
 		description: "SGM Corporations supplies industrial valves, flanges, fasteners and carbon products for process industries.",
 		sameAs: ["https://www.linkedin.com/in/sgm-corporations-a84b93187/"],

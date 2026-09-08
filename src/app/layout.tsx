@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "SGM Corporations | Industrial Supply, Made Dependable",
     description: "Industrial valves, carbon products and engineered supply for the systems that keep industry moving.",
     url: "https://www.sgmcorporations.com/", siteName: "SGM Corporations", type: "website",
-    images: [{ url: "/sgm_ref/Industrial%20Valves%20%26%20Carbon%20Graphite%20Products_files/Coal_Ind_4tYq.jpg", width: 1200, height: 800, alt: "Industrial process facility" }],
+    images: [{ url: "/photos/BE_MastSm_Navy_Marine_Offshore.jpg", width: 1200, height: 800, alt: "Industrial process facility" }],
   },
   robots: { index: true, follow: true },
 };

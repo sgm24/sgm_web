@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero({ asset }) {
   return <section className="hero" aria-labelledby="hero-title">
-    <Image className="hero-image" src={asset("Coal_Ind_4tYq.jpg")} alt="Industrial energy and process facility at dusk" fill priority sizes="100vw" />
+    <Image className="hero-image" src={asset("power-generation.jpg")} alt="Industrial energy and process facility at dusk" fill priority quality={90} sizes="100vw" />
     <div className="hero-overlay" />
         <div className="container hero-content">
             <p className="eyebrow">Engineering supply partner · Since 1990</p>
