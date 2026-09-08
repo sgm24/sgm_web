@@ -20,6 +20,27 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 
+.whatsapp-button {
+	align-items: center;
+	background: #25d366;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	bottom: 24px;
+	box-shadow: 0 5px 18px rgba(17, 24, 35, .22);
+	color: #fff;
+	display: flex;
+	height: 58px;
+	justify-content: center;
+	position: fixed;
+	right: 24px;
+	transition: background .2s, transform .2s;
+	width: 58px;
+	z-index: 10;
+}
+.whatsapp-button svg { fill: currentColor; height: 29px; width: 29px; }
+.whatsapp-button:hover { background: #1ebe5d; transform: translateY(-3px); }
+.whatsapp-button:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+
 .container {
 	margin: 0 auto;
 	width: min(1180px, calc(100% - 64px));
@@ -491,6 +512,8 @@ h2 em { color: var(--orange); font-style: normal; }
 }
 
 @media (max-width: 480px) {
+	.whatsapp-button { bottom: 18px; height: 52px; right: 18px; width: 52px; }
+	.whatsapp-button svg { height: 26px; width: 26px; }
 	.main-nav a:nth-child(3),
 	.main-nav a:nth-child(4) { display: none; }
 	.hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }

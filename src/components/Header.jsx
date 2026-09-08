@@ -18,7 +18,7 @@ export default function Header({ asset }) {
           </nav>
         </div>
       </header>
-      <a className="header-call" href="tel:+919850339010"><span aria-hidden="true">↗</span> Call us</a>
+      {/* <a className="header-call" href="tel:+919850339010"><span aria-hidden="true">↗</span> Call us</a> */}
     </>
   );
 }
