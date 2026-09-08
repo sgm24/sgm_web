@@ -10,7 +10,7 @@ import Services from "./Services";
 const asset = (name) => `/photos/${name}`;
 
 const services = [
-	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "Cement plant.jpg" },
+	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "pexels-sonny-vermeer-505472791-17728782.jpg" },
 	{ number: "02", title: "Flanges & fasteners", text: "A dependable supply of essential connection hardware for critical infrastructure.", image: "Power generation 2.jpg" },
 	{ number: "03", title: "Carbon products", text: "Engineered carbon components selected for performance, durability and service life.", image: "cement_plant_121115.jpg" },
 ];

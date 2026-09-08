@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Industries({ asset }) {
   return <section className="industries section" id="industries" aria-labelledby="industries-title">
     <div className="container industry-grid">
-        <div className="industry-image"><Image src={asset("Marine-home.png")} alt="Offshore marine platform and support vessels" fill quality={90} sizes="(max-width: 800px) 100vw, 50vw" />
+        <div className="industry-image"><Image src="pexels-solyartphotos-36488785" alt="Offshore marine platform and support vessels" fill quality={90} sizes="(max-width: 800px) 100vw, 50vw" />
         </div>
     <div className="industry-copy">
         <p className="eyebrow dark-eyebrow">What We Offer</p>
