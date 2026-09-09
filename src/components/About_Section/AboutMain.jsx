@@ -21,7 +21,7 @@ export default function AboutMain() {
       <main className="about-page">
         <section className="about-hero">
           <div className="container about-hero-inner">
-            <p className="eyebrow">About SGM</p>
+            <p className="eyebrow">About SGM Corporations</p>
             <h1>
               About <span>Us</span>
             </h1>
@@ -36,26 +36,25 @@ export default function AboutMain() {
         <section className="section about-intro">
           <div className="container about-intro-card">
             <div className="about-intro-header">
-              <p className="dark-eyebrow">We are into</p>
-              <h2>Sales &amp; Distributors of various product and services.</h2>
+              <p className="dark-eyebrow text-2xl font-bold">SGM Corporations</p>
+              <h3>is an industrial solutions and supply partner serving process industries with a range of Electrical &amp; Mechanical products</h3>
             </div>
 
             <div className="about-copy">
               <p>
-                We are in to Sales &amp; Distributors of various products and services to your
-                esteemed organization. We are an authorized distributor of Novel Valve India Pvt.
-                Ltd. and supply a wide range of high-quality industrial valves throughout India and
-                globally.
+                We work closely with customers and leading manufacturers to provide reliable products, technical solutions and responsive supply support for demanding industrial applications.
               </p>
               <p>
-                Trusted by the industry for over two decades, Novel Valve offers innovative
-                products and solutions that enhance safety, reliability and performance in
-                flow-control systems across the globe.
+                SGM Corporations represents selected leading manufacturers and process-industry solution providers, helping customers access quality products, dependable technical support and efficient supply-chain solutions.
               </p>
               <p>
-                Our facilities, cutting-edge technology and unmatched skill come together to create
-                state-of-the-art flow-control solutions. International safety, health and
-                environment standards govern every phase of the manufacturing process.
+                Our solutions cater to industries such as Sugar Industries, Power Industries, Steel Industries, Cement Industries and other Process Industries, where product reliability and timely availability are critical
+              </p>
+              <p>
+                With strong industry knowledge, sourcing capabilities and logistics expertise, we are committed to delivering the right product, at the right time, with consistent service and support.
+              </p>
+              <p>
+                Our strength lies in understanding industrial requirements and providing dependable solutions from product selection to delivery.
               </p>
             </div>
 

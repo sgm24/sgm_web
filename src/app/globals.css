@@ -389,8 +389,8 @@ h2 em { color: var(--orange); font-style: normal; }
 	margin-bottom: 28px;
 }
 
-.about-intro-header h2 {
-	font-size: clamp(34px, 4vw, 52px);
+.about-intro-header h3 {
+	font-size: clamp(26px, 3vw, 40px);
 	letter-spacing: -0.05em;
 	line-height: 1.04;
 	margin-top: 6px;
@@ -398,7 +398,8 @@ h2 em { color: var(--orange); font-style: normal; }
 
 .about-copy {
 	color: var(--muted);
-	font-size: 16px;
+	font-size: 17px;
+	font-weight: 425;
 	line-height: 1.8;
 	max-width: 880px;
 }
