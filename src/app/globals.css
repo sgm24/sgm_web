@@ -11,7 +11,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
 body {
 	background: var(--paper);
 	color: var(--ink);
@@ -49,9 +52,13 @@ a { color: inherit; text-decoration: none; }
 .site-header {
 	background: #fff;
 	border-bottom: 1px solid #e3e6e8;
-	position: relative;
-	z-index: 2;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 20;
 }
+.site-header + main { padding-top: 90px; }
 .header-inner {
 	align-items: center;
 	display: flex;
@@ -473,8 +480,10 @@ h2 em { color: var(--orange); font-style: normal; }
 }
 
 @media (max-width: 800px) {
+	html { scroll-padding-top: 76px; }
 	.container { width: min(100% - 40px, 600px); }
 	.header-inner { height: 76px; }
+	.site-header + main { padding-top: 76px; }
 	.main-nav { gap: 16px; margin: 0; }
 	.main-nav a { font-size: 10px; padding: 28px 0; }
 	.header-call { display: none; }
