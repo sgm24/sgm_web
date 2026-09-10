@@ -8,6 +8,7 @@ import Intro from "./Intro";
 import Services from "./Services";
 
 const asset = (name) => `/photos/${name}`;
+const clientAsset = (name) => `/clients/${name}`;
 
 const services = [
 	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "pexels-sonny-vermeer-505472791-17728782.jpg" },
@@ -16,9 +17,14 @@ const services = [
 ];
 
 const clients = [
-	["JSPL_4tYq.png", "Jindal Steel & Power"], ["TechnipFMC-logo-1_4tYq.jpg", "TechnipFMC"],
-	["download-1-2_4tYq.png", "RM Cutter Process Solutions"], ["download-3_4tYq.jpg", "INDCON Projects"],
-	["download-4_4tYq.png", "Kilburn Engineering"], ["viswa-1_4tYq.png", "Viswa Scrubbers"],
+	["aarloha.jpg", "Aarloha"], ["essarlogo.jpg", "AMNS India"],
+	["Bhushan steel.png", "Bhushan Power & Steel"], ["Bilt.png", "Bilt"], ["Dalmiya Cement.jpg", "Dalmia Cement"],
+	["Daund Sugar.jpg", "Daund Sugar"], ["EID Parry.jpg", "E.I.D. Parry"], ["Geetai Steel.png", "Geetai Steel"],
+	["Hindalco.jpg", "Hindalco"], ["JSW.png", "JSW Steel"], ["Khatu SHyam.jpg", "Khatu Shyam"],
+	["KPR Sugar.png", "KPR Sugar"], ["Mahagenco.webp", "MAHAGENCO"], ["OMSai Ram.png", "Om Sai Ram"],
+	["POsco.png", "POSCO"], ["Rajuri Steel.png", "Rajuri Steel"], ["RCCPL.png", "RCCPL"],
+	["Rev Power.png", "Rev Power"], ["Rushas.jpg", "Rushas Engineering"], ["SRJ Steel.png", "SRJ Steel"],
+	["TDPS.png", "TDPS"], ["Thermax.png", "Thermax"], ["ultratech-main-logo.jpeg", "UltraTech"],
 ];
 
 export default function MainPage() {
@@ -39,7 +45,7 @@ export default function MainPage() {
 				<Intro />
 				<Services asset={asset} services={services} />
 				<Industries asset={asset} />
-				<Clients asset={asset} clients={clients} />
+				<Clients asset={clientAsset} clients={clients} />
 				<Contact />
 			</main>
 			<Footer asset={asset} />

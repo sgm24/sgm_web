@@ -268,15 +268,22 @@ h2 em { color: var(--orange); font-style: normal; }
 .clients-heading p:last-child { color: var(--muted); margin: 17px auto 45px; }
 .clients-heading h2 { font-size: 47px; letter-spacing: -.05em; }
 .client-grid {
-	align-items: center;
-	display: grid;
-	gap: 14px;
-	grid-template-columns: repeat(6, 1fr);
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
+.client-track {
+	animation: client-marquee 65s linear infinite;
+	display: flex;
+	gap: 14px;
+	width: max-content;
+}
+.client-track:hover { animation-play-state: paused; }
 .client-logo {
 	align-items: center;
 	background: #fff;
 	display: flex;
+	flex: 0 0 clamp(170px, 16vw, 220px);
 	height: 112px;
 	justify-content: center;
 	padding: 12px;
@@ -287,6 +294,27 @@ h2 em { color: var(--orange); font-style: normal; }
 	max-width: 100%;
 	object-fit: contain;
 	width: auto;
+}
+@keyframes client-marquee {
+	from { transform: translateX(0); }
+	to { transform: translateX(calc(-50% - 7px)); }
+}
+.client-grid::before,
+.client-grid::after {
+	background: linear-gradient(90deg, #e9ecea, transparent);
+	content: '';
+	inset: 0 auto 0 0;
+	pointer-events: none;
+	position: absolute;
+	width: 70px;
+	z-index: 1;
+}
+.client-grid::after {
+	background: linear-gradient(270deg, #e9ecea, transparent);
+	inset: 0 0 0 auto;
+}
+@media (prefers-reduced-motion: reduce) {
+	.client-track { animation-play-state: paused; }
 }
 
 .contact {
@@ -504,7 +532,7 @@ h2 em { color: var(--orange); font-style: normal; }
 	.service-image { aspect-ratio: 1.65; }
 	.industry-image { order: 2; }
 	.industry-copy { padding: 0; }
-	.client-grid { grid-template-columns: repeat(2, 1fr); }
+	.client-logo { flex-basis: 160px; }
 	.contact-details {
 		border-left: 0;
 		border-top: 1px solid rgba(255,255,255,.25);
