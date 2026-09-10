@@ -33,7 +33,7 @@ export default function MainPage() {
 	return (
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-			<Header asset={asset} />
+			<Header />
 			<main id="top">
 				<Hero asset={asset} />
 				<Intro />

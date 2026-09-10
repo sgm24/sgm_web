@@ -2,8 +2,6 @@ import Link from "next/link";
 import Header from "../Header";
 import Footer from "../Footer";
 
-const asset = (name) => `/photos/${name}`;
-
 const productList = [
   "Gate Valve",
   "Globe & Check Valves (High Pressure & Pressure Seal Type)",
@@ -17,7 +15,7 @@ const productList = [
 export default function AboutMain() {
   return (
     <>
-      <Header asset={asset} />
+      <Header />
       <main className="about-page">
         <section className="about-hero">
           <div className="container about-hero-inner">
@@ -79,7 +77,7 @@ export default function AboutMain() {
           </div>
         </section>
       </main>
-      <Footer asset={asset} />
+      <Footer />
     </>
   );
 }
