@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: '/about',
         permanent: true,
       },
+      {
+        source: '/visionmission.html',
+        destination: '/visionmission',
+        permanent: true,
+      },
     ]
   },
 };

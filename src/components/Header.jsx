@@ -27,7 +27,7 @@ export default function Header() {
           <nav className="main-nav" aria-label="Main navigation">
             <Link href="/" className={pathname === "/" ? "active" : ""} aria-current={pathname === "/" ? "page" : undefined} onClick={scrollToTop}>Home</Link>
             <Link href="/about" className={pathname === "/about" ? "active" : ""} aria-current={pathname === "/about" ? "page" : undefined} onClick={scrollToTop}>About Us</Link>
-            <Link href="/#vision">Vision and Mission</Link>
+            <Link href="/visionmission" className={pathname === "/visionmission" ? "active" : ""} aria-current={pathname === "/visionmission" ? "page" : undefined}>Vision and Mission</Link>
             <Link href="/#products">Products</Link>
             <Link href="/#contact">Contact</Link>
           </nav>

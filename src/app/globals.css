@@ -206,6 +206,42 @@ h2 em { color: var(--orange); font-style: normal; }
 	padding-bottom: 8px;
 }
 
+.vision-mission-page { background: var(--paper); color: var(--ink); }
+.vision-mission-hero { padding-bottom: 76px; padding-top: 74px; }
+.vision-mission { background: var(--navy); color: #fff; }
+.vision-mission-heading { margin-bottom: 56px; max-width: 650px; }
+.vision-mission-heading h2 {
+	font-size: clamp(40px, 5vw, 65px);
+	letter-spacing: -.06em;
+	line-height: .96;
+}
+.vision-mission-heading .eyebrow { color: var(--orange); }
+.vision-mission-grid { display: grid; gap: 22px; grid-template-columns: 1fr 1.35fr; }
+.vision-mission-card { min-height: 340px; padding: 34px 36px 38px; }
+.vision-card { background: #fff; color: var(--ink); }
+.mission-card { background: var(--orange); color: #17243a; }
+.vision-mission-label {
+	font: 600 12px 'Space Grotesk', sans-serif;
+	letter-spacing: .08em;
+	margin: 0 0 62px;
+	text-transform: uppercase;
+}
+.vision-card .vision-mission-label { color: var(--blue); }
+.mission-card .vision-mission-label { color: #17243a; opacity: .68; }
+.vision-mission-card h3 {
+	font-size: clamp(27px, 3vw, 40px);
+	letter-spacing: -.05em;
+	line-height: 1.02;
+	margin: 0 0 22px;
+}
+.vision-mission-card > p:last-child {
+	font-size: 16px;
+	line-height: 1.7;
+	margin: 0;
+	max-width: 570px;
+}
+.vision-card > p:last-child { color: var(--muted); }
+
 .services { background: var(--paper); }
 .section-heading { align-items: end; margin-bottom: 56px; }
 .section-heading > p {
@@ -528,6 +564,9 @@ h2 em { color: var(--orange); font-style: normal; }
 		grid-template-columns: 1fr;
 	}
 	.section-heading { margin-bottom: 38px; }
+	.vision-mission-grid { grid-template-columns: 1fr; }
+	.vision-mission-card { min-height: 0; }
+	.vision-mission-label { margin-bottom: 42px; }
 	.service-grid { grid-template-columns: 1fr; }
 	.service-image { aspect-ratio: 1.65; }
 	.industry-image { order: 2; }
