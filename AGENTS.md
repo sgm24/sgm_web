@@ -12,4 +12,6 @@ Please keep the design responsive, and exclude ANY and ALL PII (personally ident
 
 Add lazy loading to pages, the website loading time and stuff needs to be FAST.
 
+Whenever new pages are created, move them into in separate folders inside src\components.
+
 <!-- END:nextjs-agent-rules -->
