@@ -36,3 +36,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 meow
+
+## Contact form setup
+
+Run `supabase/contact_submissions.sql` in the Supabase SQL editor, then configure these server-only environment variables before deploying:
+
+```env
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SECRET_KEY=your-secret-key
+```
+
+The form writes only the submitted fields and a server timestamp. The table is stored in the public `public` schema and can only be written through the restricted server function. The secret key must remain server-only and must never be exposed as a `NEXT_PUBLIC_` variable. The API also applies a basic rate limit and honeypot check; use a durable rate limiter or CAPTCHA for high-volume production traffic.

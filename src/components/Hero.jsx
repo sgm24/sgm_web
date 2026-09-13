@@ -5,7 +5,6 @@ export default function Hero({ asset }) {
     <Image className="hero-image" src={asset("power-generation.jpg")} alt="Industrial energy and process facility at dusk" fill priority quality={90} sizes="100vw" />
     <div className="hero-overlay" />
         <div className="container hero-content">
-            <p className="eyebrow">Engineering supply partner · Since 1990</p>
             <h1 id="hero-title">Assuring you<br /><em>the best.</em></h1>
             <p className="hero-copy">Industrial valves, carbon products and engineered supply for the systems that keep industry moving.</p>
                 <div className="hero-actions"><a className="button button-primary" href="#products">Explore our products <span>→</span></a>

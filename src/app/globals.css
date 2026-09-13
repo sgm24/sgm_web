@@ -65,7 +65,7 @@ a { color: inherit; text-decoration: none; }
 	height: 90px;
 	justify-content: space-between;
 }
-.brand img { display: block; height: auto; width: 275px; }
+.brand img { display: block; height: auto; width: 335px; }
 .main-nav {
 	display: flex;
 	gap: 34px;
@@ -417,7 +417,7 @@ h2 em { color: var(--orange); font-style: normal; }
 }
 .contact-page-details {
 	background: #fff;
-	padding: 36px 0;
+	padding: 20px 0;
 }
 .contact-page-grid {
 	display: grid;
@@ -431,7 +431,7 @@ h2 em { color: var(--orange); font-style: normal; }
 }
 .contact-link-list {
 	border-top: 1px solid #dfe4e7;
-	margin-top: 48px;
+	margin-top: 10px;
 }
 .contact-link-list a {
 	border-bottom: 1px solid #dfe4e7;
@@ -450,6 +450,64 @@ h2 em { color: var(--orange); font-style: normal; }
 	margin-bottom: 5px;
 	text-transform: uppercase;
 }
+.contact-form-shell { margin-top: 24px; }
+.contact-form-toggle,
+.contact-form-submit {
+	background: var(--navy);
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font: inherit;
+	font-size: 13px;
+	font-weight: 700;
+	padding: 14px 18px;
+	transition: background .2s, transform .2s;
+}
+.contact-form-toggle:hover,
+.contact-form-submit:hover { background: var(--blue); transform: translateY(-2px); }
+.contact-form-backdrop {
+	align-items: center;
+	background: rgba(10, 20, 36, .48);
+	backdrop-filter: blur(6px);
+	display: flex;
+	inset: 0;
+	justify-content: center;
+	padding: 24px;
+	position: fixed;
+	z-index: 30;
+}
+.contact-form-toggle:focus-visible,
+.contact-form-submit:focus-visible,
+.contact-form-close:focus-visible,
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.contact-form {
+	background: #fff;
+	box-shadow: 0 24px 70px rgba(7, 19, 39, .25);
+	margin: 0;
+	max-height: calc(100vh - 48px);
+	overflow-y: auto;
+	padding: 28px;
+	width: min(100%, 560px);
+}
+.contact-form-header { align-items: flex-start; display: flex; justify-content: space-between; }
+.contact-form-heading { font-size: 22px; font-weight: 700; margin: 0 0 20px; }
+.contact-form-close { background: transparent; border: 0; color: var(--muted); cursor: pointer; font-size: 28px; line-height: 1; padding: 0 0 8px 12px; }
+.contact-form-close:hover { color: var(--ink); }
+.contact-form-fields { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+.contact-form-honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.contact-form label { color: var(--muted); display: grid; font-size: 11px; font-weight: 700; gap: 7px; letter-spacing: .1em; text-transform: uppercase; }
+.contact-form input,
+.contact-form textarea { background: #fff; border: 1px solid #d4dce0; color: var(--ink); font: inherit; font-size: 15px; letter-spacing: 0; padding: 11px 12px; resize: vertical; text-transform: none; }
+.contact-form input[aria-invalid="true"],
+.contact-form textarea[aria-invalid="true"] { border-color: #aa3e32; }
+.contact-form-field-error { color: #aa3e32; font-size: 12px; font-weight: 500; letter-spacing: 0; line-height: 1.4; text-transform: none; }
+.contact-form-message { grid-column: 1 / -1; }
+.contact-form-submit { margin-top: 18px; }
+.contact-form-submit:disabled { cursor: wait; opacity: .65; transform: none; }
+.contact-form-status { font-size: 13px; line-height: 1.5; margin: 14px 0 0; }
+.contact-form-status-success { color: #24724b; }
+.contact-form-status-error { color: #aa3e32; }
 .contact-map-wrap { background: var(--paper); }
 .contact-address { padding: 34px 36px 30px; }
 .contact-address h3 { font-size: clamp(25px, 3vw, 38px); line-height: 1.05; }
@@ -677,7 +735,9 @@ h2 em { color: var(--orange); font-style: normal; }
 	.contact-page-hero { padding: 66px 0 76px; }
 	.contact-page-details { padding: 4px 0; }
 	.contact-page-grid { gap: 54px; grid-template-columns: 1fr; }
-	.contact-link-list { margin-top: 36px; }
+	.contact-link-list { margin-top: 10px; }
+	.contact-form-fields { grid-template-columns: 1fr; }
+	.contact-form-message { grid-column: auto; }
 	.contact-address { padding: 28px 24px 24px; }
 	.footer-inner {
 		align-items: flex-start;

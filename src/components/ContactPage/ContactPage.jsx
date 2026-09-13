@@ -1,5 +1,6 @@
 import Footer from "../Footer";
 import Header from "../Header";
+import ContactForm from "./ContactForm";
 
 const asset = (name) => `/photos/${name}`;
 const officeAddress = "GQ7H+85 Pune, Maharashtra";
@@ -23,29 +24,30 @@ export default function ContactPage() {
           <div className="container contact-page-grid">
             <div className="contact-page-links">
               <p className="eyebrow dark-eyebrow">Contact details</p>
-              <h2 id="contact-details-title">Find the right way <em>forward.</em></h2>
+              {/* <h2 id="contact-details-title">Find the right way <em>forward.</em></h2> */}
               <div className="contact-link-list">
-                <a href="mailto:YOUR-FIRST-EMAIL@example.com">
+                <a href="mailto:info@sgmcorporations.com">
                   <span className="contact-link-label">Email one</span>
-                  YOUR-FIRST-EMAIL@example.com
+                  info@sgmcorporations.com
                 </a>
-                <a href="mailto:YOUR-SECOND-EMAIL@example.com">
+                <a href="mailto:sales@sgmcorporations.com">
                   <span className="contact-link-label">Email two</span>
-                  YOUR-SECOND-EMAIL@example.com
+                  sales@sgmcorporations.com
                 </a>
-                <a href="tel:+0000000000">
+                <a href="https://wa.me/919850339010?text=Hello%20SGM%20Corporations%2C%20I%20would%20like%20to%20know%20more." target="_blank">
                   <span className="contact-link-label">Phone one</span>
-                  +00 00000 00000
+                  +91 98503 39010
                 </a>
-                <a href="tel:+0000000000">
+                <a href="https://wa.me/919823869010?text=Hello%20SGM%20Corporations%2C%20I%20would%20like%20to%20know%20more." target="_blank">
                   <span className="contact-link-label">Phone two</span>
-                  +00 00000 00000
+                  +91 98238 69010
                 </a>
-                <a href="https://www.linkedin.com/company/YOUR-LINKEDIN-PAGE" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/sgm-corporations-a84b93187/" target="_blank" rel="noreferrer">
                   <span className="contact-link-label">LinkedIn</span>
                   SGM Corporations on LinkedIn <span aria-hidden="true">↗</span>
                 </a>
               </div>
+              <ContactForm />
             </div>
 
             <div className="contact-map-wrap">

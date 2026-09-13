@@ -33,7 +33,7 @@ export default function MainPage() {
 		"@context": "https://schema.org", "@type": "Organization", name: "SGM Corporations",
 		url: "https://www.sgmcorporations.com/", logo: asset("400dpiLogoCropped.png"),
 		email: "sales@sgmcorporations.com", telephone: "+91 98503 39010",
-		description: "SGM Corporations supplies industrial valves, flanges, fasteners and carbon products for process industries.",
+		description: "SGM Corporations supplies mechanical and electrical carbon products, industrial valves for all type of industries.",
 		sameAs: ["https://www.linkedin.com/in/sgm-corporations-a84b93187/"],
 	};
 
