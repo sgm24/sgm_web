@@ -6,7 +6,7 @@ clients - done
 old-domain mapping
 canonical for google search
 dependabot alerts
-main page products - carbon, mech carbon, vales and holders
+main page products - carbon, mech carbon, vales and holders - done
 
 To run a cloud-backed agent in VS Code Copilot Chat using Ollama Cloud instead of your local machine's hardware, you can utilize VS Code's native Bring Your Own Key (BYOK) framework. This setup ensures your computer handles zero heavy AI math locally, and your cloud-based token requests do not count against your primary GitHub Copilot credit quotas. [1, 2, 3] 
 ## Step 1: Link your Ollama Client to the Cloud

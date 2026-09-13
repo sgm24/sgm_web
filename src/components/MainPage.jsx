@@ -11,9 +11,10 @@ const asset = (name) => `/photos/${name}`;
 const clientAsset = (name) => `/clients/${name}`;
 
 const services = [
-	{ number: "01", title: "Industrial valves", text: "Reliable flow-control solutions for demanding process, power, oil and gas applications.", image: "pexels-sonny-vermeer-505472791-17728782.jpg" },
-	{ number: "02", title: "Flanges & fasteners", text: "A dependable supply of essential connection hardware for critical infrastructure.", image: "Power generation 2.jpg" },
-	{ number: "03", title: "Carbon products", text: "Engineered carbon components selected for performance, durability and service life.", image: "cement_plant_121115.jpg" },
+	{ number: "01", title: "Electrical Carbon Products", text: "Quality electrical carbon products includes carbon brushes, carbon brush assemblies for reliable performance in AC/DC motors, generators and electrical equipments.", image: "pexels-sonny-vermeer-505472791-17728782.jpg" },
+	{ number: "02", title: "Mechanical Carbon Products", text: "High-Performance mechanical carbon products includes carbon bush bearning, carbon seals, rotary steam joints. Designed for high temperature and heavy-load industrial application.", image: "Power generation 2.jpg" },
+	{ number: "03", title: "Industrial Valves", text: "Reliable industrial valves for demanding process applications, offering dependable flow control and long service life across sugar, power, steel, cement and other industries.", image: "cement_plant_121115.jpg" },
+	{ number: "04", title: "Carbon Brush Holder", text: "Durable brush holder for high performance in industrial motors and electrical equipments.", image: "cement_plant_121115.jpg" },
 ];
 
 const clients = [
@@ -43,7 +44,7 @@ export default function MainPage() {
 			<main id="top">
 				<Hero asset={asset} />
 				<Intro />
-				<Services asset={asset} services={services} />
+				<Services services={services} />
 				<Industries asset={asset} />
 				<Clients asset={clientAsset} clients={clients} />
 				<Contact />
