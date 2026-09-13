@@ -70,11 +70,31 @@ export async function POST(request: Request) {
   };
   const submission = { p_name: name, p_email: email, p_phone: phone, p_subject: subject, p_message: message };
 
-  const response = await fetch(`${supabaseRestUrl}/rest/v1/rpc/submit_contact_submission`, {
+  let response = await fetch(`${supabaseRestUrl}/rest/v1/rpc/submit_contact_submission`, {
     method: "POST",
     headers: supabaseHeaders,
     body: JSON.stringify(submission),
   });
+
+  if (!response.ok) {
+    const rpcError = await response.text();
+    let rpcErrorCode = "";
+
+    try {
+      rpcErrorCode = JSON.parse(rpcError).code;
+    } catch {
+    }
+
+    if (rpcErrorCode === "PGRST202") {
+      response = await fetch(`${supabaseRestUrl}/rest/v1/contact_submissions`, {
+        method: "POST",
+        headers: supabaseHeaders,
+        body: JSON.stringify({ name, email, phone, subject, message }),
+      });
+    } else {
+      console.error("Supabase contact submission failed", rpcError);
+    }
+  }
 
   if (!response.ok) {
     console.error("Supabase contact submission failed", await response.text());
