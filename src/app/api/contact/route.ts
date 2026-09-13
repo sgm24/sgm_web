@@ -70,19 +70,11 @@ export async function POST(request: Request) {
   };
   const submission = { p_name: name, p_email: email, p_phone: phone, p_subject: subject, p_message: message };
 
-  let response = await fetch(`${supabaseRestUrl}/rest/v1/rpc/submit_contact_submission`, {
+  const response = await fetch(`${supabaseRestUrl}/rest/v1/rpc/submit_contact_submission`, {
     method: "POST",
     headers: supabaseHeaders,
     body: JSON.stringify(submission),
   });
-
-  if (!response.ok && response.status === 404) {
-    response = await fetch(`${supabaseRestUrl}/rest/v1/contact_submissions`, {
-      method: "POST",
-      headers: supabaseHeaders,
-      body: JSON.stringify({ name, email, phone, subject, message }),
-    });
-  }
 
   if (!response.ok) {
     console.error("Supabase contact submission failed", await response.text());
