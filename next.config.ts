@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
         destination: '/visionmission',
         permanent: true,
       },
+      {
+        source: '/contact.html',
+        destination: '/contact',
+        permanent: true,
+      },
     ]
   },
 };
