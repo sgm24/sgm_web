@@ -343,6 +343,33 @@ h2 em { color: var(--orange); font-style: normal; }
 }
 .service-content a { color: var(--blue); font-size: 12px; font-weight: 700; text-transform: uppercase; }
 
+.product-page { background: var(--paper); }
+.product-hero { background: var(--navy); color: #fff; overflow: hidden; }
+.product-hero-grid { align-items: stretch; display: grid; grid-template-columns: .9fr 1.1fr; min-height: 570px; }
+.product-hero-copy { align-self: center; padding: 80px 50px 80px 0; }
+.product-hero-copy h1 { font-size: clamp(58px, 8vw, 104px); }
+.product-lead { color: #dce5f1; font-size: 21px; line-height: 1.45; margin: 34px 0 20px; max-width: 390px; }
+.product-hero-note { color: #aebed1; font-size: 14px; line-height: 1.7; margin: 0; max-width: 390px; }
+.product-hero-image { min-height: 570px; position: relative; }
+.product-hero-image::after { background: linear-gradient(90deg, var(--navy), transparent 28%); content: ''; inset: 0; pointer-events: none; position: absolute; }
+.product-hero-image img { object-fit: cover; object-position: center; }
+.product-intro { background: #fff; }
+.product-intro-grid, .product-applications-grid { align-items: start; display: grid; gap: 80px; grid-template-columns: 1fr 1fr; }
+.product-intro h2, .product-section-heading h2, .product-applications h2 { font-size: clamp(40px, 5vw, 65px); letter-spacing: -.06em; line-height: .96; }
+.product-intro-grid > p, .product-applications-copy { color: var(--muted); font-size: 17px; line-height: 1.7; margin: 4px 0 0; max-width: 510px; }
+.product-section-heading { margin-bottom: 54px; }
+.grade-grid { border-top: 1px solid #d6dcdf; display: grid; grid-template-columns: repeat(2, 1fr); }
+.grade-item { border-bottom: 1px solid #d6dcdf; padding: 30px 45px 34px 0; }
+.grade-item:nth-child(even) { border-left: 1px solid #d6dcdf; padding-left: 45px; }
+.grade-number { color: var(--orange); font: 600 12px 'Space Grotesk', sans-serif; }
+.grade-item h3 { font-size: 28px; letter-spacing: -.04em; margin: 14px 0 12px; }
+.grade-item p { color: var(--muted); font-size: 15px; line-height: 1.7; margin: 0; max-width: 500px; }
+.product-applications { background: var(--navy); color: #fff; }
+.product-applications-copy { color: #c8d4e3; }
+.application-list { border-top: 1px solid rgba(255,255,255,.25); display: grid; gap: 0 30px; grid-template-columns: 1fr 1fr; list-style: none; margin: 30px 0 38px; padding: 18px 0 0; }
+.application-list li { border-bottom: 1px solid rgba(255,255,255,.15); font-size: 14px; padding: 12px 0; }
+.application-list li::before { color: var(--orange); content: '—'; margin-right: 8px; }
+
 .industries { background: #fff; }
 .industry-grid { align-items: center; }
 .industry-image { aspect-ratio: 1.14; overflow: hidden; position: relative; }
@@ -787,6 +814,12 @@ h2 em { color: var(--orange); font-style: normal; }
 	.contact-page-hero { padding: 66px 0 76px; }
 	.contact-page-details { padding: 4px 0; }
 	.contact-page-grid { gap: 54px; grid-template-columns: 1fr; }
+	.product-hero-grid, .product-intro-grid, .product-applications-grid { gap: 35px; grid-template-columns: 1fr; }
+	.product-hero-copy { padding: 74px 0 50px; }
+	.product-hero-image { min-height: 440px; }
+	.product-hero-image::after { background: linear-gradient(180deg, var(--navy), transparent 24%); }
+	.grade-item { padding-right: 24px; }
+	.grade-item:nth-child(even) { padding-left: 24px; }
 	.contact-link-list { margin-top: 10px; }
 	.contact-form-fields { grid-template-columns: 1fr; }
 	.contact-form-message { grid-column: auto; }
@@ -816,6 +849,9 @@ h2 em { color: var(--orange); font-style: normal; }
 	.hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
 	.hero-copy { font-size: 16px; }
 	.industry-copy ul { grid-template-columns: 1fr; }
+	.grade-grid { grid-template-columns: 1fr; }
+	.grade-item, .grade-item:nth-child(even) { border-left: 0; padding-left: 0; padding-right: 0; }
+	.application-list { grid-template-columns: 1fr; }
 	.client-logo { height: 96px; }
 	.about-copy p { margin-bottom: 14px; }
 	.about-breadcrumb { font-size: 12px; gap: 8px; }

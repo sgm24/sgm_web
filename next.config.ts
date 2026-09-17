@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
         destination: '/contact',
         permanent: true,
       },
+      {
+        source: '/carbonbrush-2.html',
+        destination: '/products/carbon-brush',
+        permanent: true,
+      },
     ]
   },
 };

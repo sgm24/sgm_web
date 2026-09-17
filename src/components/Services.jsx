@@ -55,12 +55,12 @@ export default function Services({ services }) {
                 <div className="service-viewport">
                     <div className="service-grid" ref={trackRef} aria-label="Our products">
                         {services.map((service) => <article className="service-card" key={service.number}>
-                <div className="service-image"><Image src={`/photos/${service.image}`} alt={`${service.title} in an industrial setting`} fill quality={90} sizes="(max-width: 800px) 100vw, 33vw" />
+                <div className="service-image"><Image src={`/products/${service.image}`} alt={`${service.title} in an industrial setting`} fill quality={90} sizes="(max-width: 800px) 100vw, 33vw" />
                 </div>
                 <div className="service-content"><span className="service-number">{service.number}</span>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
-                <a href="#contact" aria-label={`Learn more about ${service.title}`}>Learn more <span>↗</span></a>
+                <a href={service.title === "Electrical Carbon Products" ? "/products/carbon-brush" : "#contact"} aria-label={`Learn more about ${service.title}`}>Learn more <span>↗</span></a>
             </div></article>)}
                     </div>
                 </div>

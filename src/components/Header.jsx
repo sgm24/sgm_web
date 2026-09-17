@@ -9,30 +9,29 @@ const productGroups = [
   {
     title: "Electrical Carbon Products",
     items: [
-      "Carbon Brush",
-      "Carbon Brush Holder",
-      // "Carbon Brush Holder",
-      "Components for Traction Application",
+      { label: "Carbon Brush", href: "/products/carbon-brush" },
+      { label: "Carbon Brush Holder", href: "/#products" },
+      { label: "Components for Traction Application", href: "/#products" },
     ],
   },
   {
     title: "Mechanical Carbon Products",
     items: [
-      "Carbon Stoker Bush",
-      "Carbon Bush Bearing",
-      "Carbon Seal",
-      "Rotary Steam Joint",
-      "Gland Packing Ring",
+      { label: "Carbon Stoker Bush", href: "/#products" },
+      { label: "Carbon Bush Bearing", href: "/#products" },
+      { label: "Carbon Seal", href: "/#products" },
+      { label: "Rotary Steam Joint", href: "/#products" },
+      { label: "Gland Packing Ring", href: "/#products" },
     ],
   },
   {
     title: "Industrial Valves",
     items: [
-      "Butterfly Valves",
-      "Ball Valves",
-      "Gate Valves",
-      "Globe Valve",
-      "Double Block & Bleed Ball",
+      { label: "Butterfly Valves", href: "/#products" },
+      { label: "Ball Valves", href: "/#products" },
+      { label: "Gate Valves", href: "/#products" },
+      { label: "Globe Valve", href: "/#products" },
+      { label: "Double Block & Bleed Ball", href: "/#products" },
     ],
   },
 ];
@@ -104,8 +103,8 @@ export default function Header() {
                         <h3>{group.title}</h3>
                         <ul>
                           {group.items.map((item) => (
-                            <li key={item}>
-                              <Link href="/#products" onClick={() => setProductsOpen(false)}>{item}</Link>
+                            <li key={item.label}>
+                              <Link href={item.href} onClick={() => setProductsOpen(false)}>{item.label}</Link>
                             </li>
                           ))}
                         </ul>
