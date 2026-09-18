@@ -6,8 +6,10 @@ export default function Contact() {
             <h2 id="contact-title">Need a reliable<br /><em>industrial partner?</em></h2>
         </div>
         <div className="contact-details">
-            <p>Tell us what you are working on. We will help you find the right way forward.</p>
+            {/* <p>Tell us what you are working on. We will help you find the right way forward.</p> */}
             <a href="mailto:info@sgmcorporations.com">info@sgmcorporations.com <span>↗</span></a>
+            <a href="mailto:sales@sgmcorporations.com">sales@sgmcorporations.com <span>↗</span></a>
+            <a href="mailto:purchase@sgmcorporations.com">purchase@sgmcorporations.com <span>↗</span></a>
             <a href="tel:+919850339010">+91 98503 39010 <span>↗</span></a>
         </div>
     </div>

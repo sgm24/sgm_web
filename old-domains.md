@@ -10,7 +10,7 @@ sgmcorporations.com/plug
 sgmcorporations.com/productapplication
 <!-- sgmcorporations.com/visionmission -->
 sgmcorporations.com/valves
-sgmcorporations.com/mechanicalproducts
+sgmcorporations.com/mechanicalproducts - make new page for this separately
 sgmcorporations.com/control
 sgmcorporations.com/basket-type
 sgmcorporations.com/y-type

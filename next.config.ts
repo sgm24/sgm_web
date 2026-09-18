@@ -31,6 +31,11 @@ const nextConfig: NextConfig = {
         destination: '/products/carbon-brush',
         permanent: true,
       },
+      {
+        source: '/brushholder.html',
+        destination: '/products/carbon-brush-holder',
+        permanent: true,
+      },
     ]
   },
 };
