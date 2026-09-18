@@ -10,8 +10,8 @@ const productGroups = [
     title: "Electrical Carbon Products",
     items: [
       { label: "Carbon Brush", href: "/products/carbon-brush" },
-      { label: "Carbon Brush Holder", href: "/#products" },
-      { label: "Components for Traction Application", href: "/#products" },
+      { label: "Carbon Brush Holder", href: "/products/carbon-brush-holder" },
+      { label: "Components for Traction Application", href: "/products/components-for-traction-application" },
     ],
   },
   {

@@ -60,7 +60,7 @@ export default function Services({ services }) {
                 <div className="service-content"><span className="service-number">{service.number}</span>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
-                <a href={service.title === "Electrical Carbon Products" ? "/products/carbon-brush" : "#contact"} aria-label={`Learn more about ${service.title}`}>Learn more <span>↗</span></a>
+                <a href={service.title === "Electrical Carbon Products" ? "/products/carbon-brush" : service.title === "Carbon Brush Holder" ? "/products/carbon-brush-holder" : "#contact"} aria-label={`Learn more about ${service.title}`}>Learn more <span>↗</span></a>
             </div></article>)}
                     </div>
                 </div>
