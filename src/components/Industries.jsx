@@ -18,7 +18,7 @@ export default function Industries({ asset }) {
             <li>On-Time Delivery</li>
             <li>Trust</li>
         </ul>
-        <a className="button button-dark" href="#contact">Discuss your project <span>→</span></a>
+        <a className="button button-dark" href="/contact">Discuss your project <span>→</span></a>
     </div>
     </div>
     </section>;

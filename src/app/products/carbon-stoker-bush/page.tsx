@@ -15,7 +15,18 @@ export const metadata: Metadata = {
     "carbon bush bearing",
     "copper impregnated carbon graphite stoker bush",
     "Morganite bush",
+    "carbon stoker bush supplier India",
+    "sugar mill boiler stoker bush",
+    "power plant stoker bush",
+    "boiler carbon bush bearing",
   ],
+  alternates: { canonical: "/products/carbon-stoker-bush" },
+  openGraph: {
+    title: "Carbon Graphite Stoker Bush for Boilers | SGM Corporations",
+    description: "Copper impregnated carbon graphite stoker bushes for travelling grate and waste heat recovery boilers in sugar, power and process industries.",
+    url: "https://www.sgmcorporations.com/products/carbon-stoker-bush",
+    type: "website",
+  },
 };
 
 export default function CarbonStokerBushPage() {
