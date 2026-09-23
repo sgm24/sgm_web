@@ -18,7 +18,7 @@ const productGroups = [
     title: "Mechanical Carbon Products",
     items: [
       { label: "Carbon Stoker Bush", href: "/products/carbon-stoker-bush" },
-      { label: "Carbon Bush Bearing", href: "/#products" },
+      { label: "Carbon Bush Bearing", href: "/carbon-bush-bearing" },
       { label: "Carbon Seal", href: "/#products" },
       { label: "Rotary Steam Joint", href: "/#products" },
       { label: "Gland Packing Ring", href: "/#products" },
