@@ -70,11 +70,11 @@ export default function RotarySteamJoint() {
 
         <section className="bearing-advantages section" aria-labelledby="rotary-joint-benefits-title">
           <div className="container">
-            <div className="product-section-heading">
+            {/* <div className="product-section-heading">
               <p className="eyebrow dark-eyebrow">Carbon sealing performance</p>
               <h2 id="rotary-joint-benefits-title">Made for dependable<br /><em>steam service.</em></h2>
-            </div>
-            <div className="holder-feature-grid">
+            </div> */}
+            <div className="holder-feature-grid rotary-steam-feature-grid">
               {benefits.map((benefit, index) => (
                 <article className="holder-feature" key={benefit}>
                   <span className="grade-number">0{index + 1}</span>
