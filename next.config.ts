@@ -36,6 +36,21 @@ const nextConfig: NextConfig = {
         destination: '/products/carbon-brush-holder',
         permanent: true,
       },
+      {
+        source: '/butterfly.html',
+        destination: '/products/butterfly-valve',
+        permanent: true,
+      },
+      {
+        source: '/ballvalve.html',
+        destination: '/products/ball-valve',
+        permanent: true,
+      },
+      {
+        source: '/doubleblockballvalve.html',
+        destination: '/products/',
+        permanent: true,
+      },
     ]
   },
 };

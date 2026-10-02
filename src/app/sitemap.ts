@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products/components-for-traction-application",
     "/products/rotary-steam-joint",
     "/products/gland-packing-ring",
+    "/products/butterfly-valve",
+    "/products/ball-valve",
+    "/products/double-block-bleed-valve",
+    "/products/gate-valve",
+    "/products/globe-valve",
   ];
 
   return routes.map((route) => ({

@@ -27,11 +27,11 @@ const productGroups = [
   {
     title: "Industrial Valves",
     items: [
-      { label: "Butterfly Valves", href: "/#products" },
-      { label: "Ball Valves", href: "/#products" },
-      { label: "Gate Valves", href: "/#products" },
-      { label: "Globe Valve", href: "/#products" },
-      { label: "Double Block & Bleed Ball", href: "/#products" },
+      { label: "Butterfly Valves", href: "/products/butterfly-valve" },
+      { label: "Ball Valves", href: "/products/ball-valve" },
+      { label: "Gate Valves", href: "/products/gate-valve" },
+      { label: "Globe Valves", href: "/products/globe-valve" },
+      { label: "Double Block & Bleed Ball", href: "/products/double-block-bleed-valve" },
     ],
   },
 ];

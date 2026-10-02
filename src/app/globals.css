@@ -419,6 +419,99 @@ h2 em { color: var(--orange); font-style: normal; }
 .gland-packing-gallery .product-section-heading { margin-bottom: 48px; }
 .gland-packing-gallery-item { grid-column: span 6; min-height: 400px; }
 .gland-packing-gallery-item img { padding: 28px; }
+.butterfly-hero-image img { object-position: center; }
+.butterfly-features .product-section-heading { margin-left: 0; text-align: left; width: auto; }
+.butterfly-feature-grid { grid-template-columns: repeat(3, 1fr); }
+.double-block-bleed-page .section { padding-block: 44px; }
+.double-block-bleed-page .product-section-heading { margin-bottom: 26px; }
+.dbb-applications-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.dbb-applications-grid .holder-feature { border-left: 0; padding-left: 0; padding-right: 18px; }
+.dbb-applications-grid .holder-feature:not(:nth-child(5n + 1)) { border-left: 1px solid #d6dcdf; padding-left: 18px; }
+.butterfly-specifications { background: #fff; }
+.butterfly-specifications .product-section-heading { margin-bottom: 34px; }
+.butterfly-specifications-scroll { overflow-x: auto; }
+.butterfly-specifications-scroll:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+.butterfly-specifications-table { border-collapse: collapse; min-width: 620px; width: 100%; }
+.butterfly-specifications-table caption { background: var(--navy); color: #fff; font: 600 18px 'Space Grotesk', sans-serif; padding: 15px 20px; text-align: left; }
+.butterfly-specifications-table th, .butterfly-specifications-table td { border-bottom: 1px solid #d6dcdf; padding: 16px 20px; text-align: left; vertical-align: top; }
+.butterfly-specifications-table th { color: var(--navy); font-size: 14px; font-weight: 700; width: 30%; }
+.butterfly-specifications-table td { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.butterfly-specifications-note { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 18px 0 0; }
+.butterfly-gallery { background: #fff; }
+.butterfly-gallery-grid { grid-template-columns: 1fr 1fr; }
+.butterfly-gallery-item { background: #eef0ed; margin: 0; min-height: 380px; overflow: hidden; position: relative; }
+.butterfly-gallery-item img { object-fit: contain; padding: 20px; transition: transform .5s; }
+.butterfly-gallery-item:hover img { transform: scale(1.03); }
+.butterfly-gallery-item figcaption { background: rgba(13, 30, 59, .86); bottom: 0; color: #fff; font-size: 12px; left: 0; line-height: 1.35; padding: 12px 15px; position: absolute; right: 0; z-index: 1; }
+.butterfly-gallery-item-product img { padding: 30px; }
+.butterfly-gallery-item-detail img { object-fit: cover; object-position: center 35%; padding: 0; }
+.butterfly-valve-page .product-applications-copy + .button { display: inline-flex; margin-top: 24px; }
+.ball-valve-hero-image img { object-position: center; }
+.ball-valve-page .section { padding-block: 40px; }
+.ball-valve-page .product-section-heading { margin-bottom: 24px; }
+.ball-valve-range .product-section-heading,
+.ball-valve-features .product-section-heading { margin-left: 0; text-align: left; width: auto; }
+.ball-valve-range-grid,
+.ball-valve-feature-grid { grid-template-columns: repeat(3, 1fr); }
+.ball-valve-range-item { min-height: 96px; padding: 16px 24px 14px 0; }
+.ball-valve-range-item p { font-size: 18px; margin-top: 7px; }
+.ball-valve-feature-grid .holder-feature { min-height: 108px; padding-bottom: 16px; padding-top: 17px; }
+.ball-valve-feature-grid .holder-feature p { margin-top: 8px; }
+.ball-valve-page .product-applications-copy + .button { margin-top: 28px; }
+.gate-valve-page .section { padding-block: 40px; }
+.gate-valve-page .product-section-heading { margin-bottom: 24px; }
+.gate-valve-hero-image { background: #e8eae6; }
+.gate-valve-hero-image::after { display: none; }
+.gate-valve-hero-image img { object-fit: contain; padding: 28px; }
+.gate-valve-principle { background: #fff; }
+.gate-valve-principle > .container > div:first-child { grid-column: 2; grid-row: 1; }
+.gate-valve-principle .gate-valve-principle-copy { grid-column: 1; grid-row: 1; }
+.gate-valve-principle-copy p { color: var(--muted); font-size: 17px; line-height: 1.7; margin: 4px 0 18px; max-width: 560px; }
+.gate-valve-principle-copy p:last-child { margin-bottom: 0; }
+.gate-valve-page .product-intro-grid h2 { font-size: clamp(38px, 4.2vw, 54px); letter-spacing: -.055em; line-height: .98; }
+.gate-valve-types .product-section-heading,
+.gate-valve-features .product-section-heading { margin-left: 0; text-align: left; width: auto; }
+.gate-valve-type-grid { grid-template-columns: repeat(3, 1fr); }
+.gate-valve-feature-grid { grid-template-columns: repeat(4, 1fr); }
+.gate-valve-feature-grid .holder-feature { border-left: 0; padding-left: 0; }
+.gate-valve-feature-grid .holder-feature:not(:nth-child(4n + 1)) { border-left: 1px solid #d6dcdf; padding-left: 28px; }
+.gate-valve-gallery { background: #fff; }
+.gate-valve-gallery .product-section-heading { margin-bottom: 24px; }
+.gate-valve-gallery-grid { grid-template-columns: repeat(12, 1fr); }
+.gate-valve-gallery-item { grid-column: span 4; min-height: 310px; }
+.gate-valve-gallery-item img { object-fit: contain; padding: 24px; }
+.gate-valve-page .product-applications-copy + .button { display: inline-flex; margin-top: 24px; }
+.globe-valve-hero-image { background: #e8eae6; }
+.globe-valve-hero-image::after { display: none; }
+.globe-valve-hero-image img { object-fit: contain; padding: 28px; }
+.globe-valve-service { background: #fff; }
+.globe-valve-service > .container > div:first-child { grid-column: 2; }
+.globe-valve-service .globe-valve-service-copy { grid-column: 1; grid-row: 1; }
+.globe-valve-service .product-intro-grid h2 { font-size: clamp(40px, 5vw, 65px); letter-spacing: -.06em; line-height: .96; }
+.globe-valve-service-copy p { color: var(--muted); font-size: 17px; line-height: 1.7; margin: 4px 0 18px; max-width: 560px; }
+.globe-valve-service-copy p:last-child { margin-bottom: 0; }
+.globe-valve-types .product-section-heading,
+.globe-valve-features .product-section-heading { margin-left: 0; text-align: left; width: auto; }
+.globe-valve-feature-grid { grid-template-columns: repeat(3, 1fr); }
+.globe-valve-feature-grid .holder-feature { border-left: 0; padding-left: 0; }
+.globe-valve-feature-grid .holder-feature:not(:nth-child(3n + 1)) { border-left: 1px solid #d6dcdf; padding-left: 28px; }
+.globe-valve-type-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.globe-valve-type-grid .holder-feature { border-left: 0; min-height: 132px; padding-left: 0; }
+.globe-valve-type-grid .holder-feature:not(:nth-child(4n + 1)) { border-left: 1px solid #d6dcdf; padding-left: 24px; }
+.globe-valve-gallery { background: #fff; }
+.globe-valve-gallery .product-section-heading { margin-bottom: 24px; }
+.globe-valve-gallery-item img { object-fit: contain; padding: 24px; }
+.globe-valve-closing-inner { display: grid; gap: 48px; }
+.globe-valve-closing-cta { border-top: 1px solid rgba(255,255,255,.25); padding-top: 48px; }
+.globe-valve-page .product-applications-copy + .button { display: inline-flex; margin-top: 24px; }
+.ball-valve-gallery { background: #fff; }
+.ball-valve-gallery-grid { grid-template-columns: 1fr 1fr; }
+.ball-valve-gallery-item { background: #eef0ed; margin: 0; min-height: 380px; overflow: hidden; position: relative; }
+.ball-valve-gallery-item img { object-fit: contain; padding: 24px; transition: transform .5s; }
+.ball-valve-gallery-item:hover img { transform: scale(1.03); }
+.ball-valve-gallery-item figcaption { background: rgba(13, 30, 59, .86); bottom: 0; color: #fff; font-size: 12px; left: 0; line-height: 1.35; padding: 12px 15px; position: absolute; right: 0; z-index: 1; }
+.ball-valve-gallery-item-cutaway img { object-fit: cover; padding: 0; }
+.ball-valve-gallery-item-product img { padding: 38px; }
 .gland-packing-feature-heading { align-items: end; display: grid; gap: 80px; grid-template-columns: 1fr 1fr; }
 .gland-packing-ring-page .bearing-advantages .gland-packing-feature-heading { margin-left: 0; text-align: left; width: auto; }
 .gland-packing-feature-heading > div { grid-column: 2; grid-row: 1; }
@@ -880,6 +973,8 @@ h2 em { color: var(--orange); font-style: normal; }
 	.contact-page-details { padding: 4px 0; }
 	.contact-page-grid { gap: 54px; grid-template-columns: 1fr; }
 	.product-hero-grid, .product-intro-grid, .product-applications-grid { gap: 35px; grid-template-columns: 1fr; }
+	.gate-valve-principle > .container > div:first-child,
+	.gate-valve-principle .gate-valve-principle-copy { grid-column: 1; grid-row: auto; }
 	.gland-packing-ring-page .product-hero-grid { grid-template-columns: 1fr; }
 	.product-intro { padding-bottom: 36px; }
 	.holder-features { padding-top: 36px; }
@@ -906,6 +1001,31 @@ h2 em { color: var(--orange); font-style: normal; }
 	.stoker-gallery-item { min-height: 360px; }
 	.bearing-gallery-item-1, .bearing-gallery-item-2 { grid-column: span 6; }
 	.gland-packing-gallery-item { grid-column: span 6; min-height: 340px; }
+	.butterfly-feature-grid { grid-template-columns: 1fr 1fr; }
+	.butterfly-gallery-grid { grid-template-columns: 1fr; }
+	.butterfly-gallery-item { min-height: 340px; }
+	.ball-valve-range-grid, .ball-valve-feature-grid { grid-template-columns: 1fr 1fr; }
+	.ball-valve-gallery-grid { grid-template-columns: 1fr; }
+	.ball-valve-gallery-item { min-height: 340px; }
+	.gate-valve-feature-grid { grid-template-columns: 1fr 1fr; }
+	.gate-valve-feature-grid .holder-feature:nth-child(odd) { border-left: 0; padding-left: 0; }
+	.gate-valve-feature-grid .holder-feature:nth-child(even) { border-left: 1px solid #d6dcdf; padding-left: 24px; }
+	.gate-valve-gallery-grid { grid-template-columns: 1fr; }
+	.gate-valve-gallery-item { grid-column: 1; min-height: 340px; }
+	.globe-valve-service > .container > div:first-child,
+	.globe-valve-service .globe-valve-service-copy { grid-column: 1; grid-row: auto; }
+	.globe-valve-feature-grid { grid-template-columns: 1fr 1fr; }
+	.globe-valve-feature-grid .holder-feature { border-left: 0; padding-left: 0; }
+	.globe-valve-feature-grid .holder-feature:nth-child(even) { border-left: 1px solid #d6dcdf; padding-left: 24px; }
+	.dbb-applications-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.dbb-applications-grid .holder-feature:not(:nth-child(5n + 1)) { border-left: 0; padding-left: 0; }
+	.dbb-applications-grid .holder-feature:nth-child(even) { border-left: 1px solid #d6dcdf; padding-left: 24px; }
+	.globe-valve-type-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.globe-valve-type-grid .holder-feature:not(:nth-child(2n + 1)) { border-left: 1px solid #d6dcdf; padding-left: 24px; }
+	.globe-valve-type-grid .holder-feature:nth-child(2n + 1) { border-left: 0; padding-left: 0; }
+	.double-block-bleed-page .section { padding-block: 32px; }
+	.ball-valve-page .section { padding-block: 32px; }
+	.gate-valve-page .section { padding-block: 32px; }
 	.bearing-gallery-item-3, .bearing-gallery-item-4, .bearing-gallery-item-5, .bearing-gallery-item-6, .bearing-gallery-item-7 { grid-column: span 4; }
 	.contact-link-list { margin-top: 10px; }
 	.contact-form-fields { grid-template-columns: 1fr; }
@@ -944,6 +1064,27 @@ h2 em { color: var(--orange); font-style: normal; }
 	.holder-gallery-item-1, .holder-gallery-item-2, .holder-gallery-item-3, .holder-gallery-item-4, .holder-gallery-item-5, .holder-gallery-item-6, .traction-gallery-item-1, .traction-gallery-item-2, .traction-gallery-item-3, .traction-gallery-item-4 { grid-column: span 12; min-height: 280px; }
 	.bearing-gallery-item-1, .bearing-gallery-item-2, .bearing-gallery-item-3, .bearing-gallery-item-4, .bearing-gallery-item-5, .bearing-gallery-item-6, .bearing-gallery-item-7 { grid-column: span 12; min-height: 280px; }
 	.gland-packing-gallery-item { grid-column: span 12; min-height: 300px; }
+	.butterfly-feature-grid { grid-template-columns: 1fr; }
+	.dbb-applications-grid { grid-template-columns: 1fr; }
+	.dbb-applications-grid .holder-feature:not(:nth-child(5n + 1)),
+	.dbb-applications-grid .holder-feature:nth-child(even) { border-left: 0; padding-left: 0; }
+	.butterfly-gallery-item { min-height: 300px; }
+	.ball-valve-range-grid, .ball-valve-feature-grid { grid-template-columns: 1fr; }
+	.ball-valve-gallery-item { min-height: 300px; }
+	.ball-valve-page .section { padding-block: 26px; }
+	.gate-valve-feature-grid { grid-template-columns: 1fr; }
+	.gate-valve-type-grid .holder-feature { border-left: 0; padding-left: 0; }
+	.gate-valve-feature-grid .holder-feature:nth-child(odd),
+	.gate-valve-feature-grid .holder-feature:nth-child(even) { border-left: 0; padding-left: 0; }
+	.gate-valve-gallery-item { min-height: 300px; }
+	.globe-valve-feature-grid { grid-template-columns: 1fr; }
+	.globe-valve-feature-grid .holder-feature:nth-child(odd),
+	.globe-valve-feature-grid .holder-feature:nth-child(even) { border-left: 0; padding-left: 0; }
+	.double-block-bleed-page .section { padding-block: 26px; }
+	.globe-valve-type-grid { grid-template-columns: 1fr; }
+	.globe-valve-type-grid .holder-feature:not(:nth-child(4n + 1)),
+	.globe-valve-type-grid .holder-feature:nth-child(2n + 1) { border-left: 0; padding-left: 0; }
+	.gate-valve-page .section { padding-block: 26px; }
 	.client-logo { height: 96px; }
 	.about-copy p { margin-bottom: 14px; }
 	.about-breadcrumb { font-size: 12px; gap: 8px; }
