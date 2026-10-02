@@ -8,11 +8,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/contact",
     "/visionmission",
-    "/carbon-bush-bearing",
     "/products/carbon-brush",
     "/products/carbon-brush-holder",
     "/products/carbon-stoker-bush",
+    "/products/carbon-seal",
+    "/products/carbon-bush-bearing",
     "/products/components-for-traction-application",
+    "/products/rotary-steam-joint",
+    "/products/gland-packing-ring",
   ];
 
   return routes.map((route) => ({

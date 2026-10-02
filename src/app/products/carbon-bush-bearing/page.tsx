@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CarbonBushBearing from "../../components/Products/CarbonBushBearing";
+import CarbonBushBearing from "../../../components/Products/CarbonBushBearing";
 
 export const metadata: Metadata = {
   title: "Carbon Bush Bearing",
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     "chemical plant carbon bearing",
     "power plant carbon bearing",
   ],
-  alternates: { canonical: "/carbon-bush-bearing" },
+  alternates: { canonical: "/products/carbon-bush-bearing" },
   openGraph: {
     title: "Carbon Graphite Bush Bearings & Seals | SGM Corporations",
     description: "Self-lubricating carbon graphite bearings and custom carbon components for high-temperature industrial applications.",
-    url: "https://www.sgmcorporations.com/carbon-bush-bearing",
+    url: "https://www.sgmcorporations.com/products/carbon-bush-bearing",
     type: "website",
   },
 };
