@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import CarbonBrushGallery from "./CarbonBrushGallery";
 
 const grades = [
   ["01", "Natural Graphite Class", "Natural graphite undergoes prolonged heat treatment to deliver high surface-speed performance. These grades can produce more commutator wear than electrographite, but offer long life and operational stability when correctly matched to the machine."],
@@ -19,9 +20,15 @@ export default function CarbonBrush() {
     <main className="product-page">
       <section className="product-hero"><div className="container product-hero-grid">
         <div className="product-hero-copy"><p className="eyebrow">01 / Electrical carbon products</p><h1>Carbon<br /><em>brushes.</em></h1><p className="product-lead">Reliable current collection for motors, generators and rotating electrical equipment.</p><p className="product-hero-note">A carbon brush is a motor or generator brush with carbon in its composition, whether that carbon is coke, lamp black or graphite.</p></div>
-        <div className="product-hero-image"><Image src="/products/Carbon-Brush-Home.png" alt="Assorted industrial carbon brushes and brush assemblies" fill priority quality={90} sizes="(max-width: 800px) 100vw, 50vw" /></div>
+        <div className="product-hero-image"><Image src="/products/carbon_brush/Carbon-Brush-Home.png" alt="Assorted industrial carbon brushes and brush assemblies" fill priority quality={90} sizes="(max-width: 800px) 100vw, 50vw" /></div>
       </div></section>
       <section className="product-intro section"><div className="container product-intro-grid"><div><p className="eyebrow dark-eyebrow">Choosing the right grade</p><h2>Performance begins<br /><em>with the material.</em></h2></div><p>Carbon brush performance depends on speed, voltage, current density, cooling, commutation and collector conditions. Our range covers the principal brush grades used across industrial electrical equipment, helping you specify a dependable fit for the machine.</p></div></section>
+      <section className="holder-gallery section" aria-labelledby="carbon-gallery-title">
+        <div className="container">
+          <div className="product-section-heading"><p className="eyebrow dark-eyebrow">Selected product range</p><h2 id="carbon-gallery-title">Real applications.<br /><em>Real performance.</em></h2></div>
+          <CarbonBrushGallery />
+        </div>
+      </section>
       <section className="product-grades section" aria-labelledby="grades-title"><div className="container"><div className="product-section-heading"><p className="eyebrow dark-eyebrow">Classes of brush grades</p><h2 id="grades-title">Made for the<br /><em>working conditions.</em></h2></div><div className="grade-grid">{grades.map(([number, title, text]) => <article className="grade-item" key={number}><span className="grade-number">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
       <section className="product-applications section" aria-labelledby="applications-title"><div className="container product-applications-grid"><div><p className="eyebrow">Supply across industries</p><h2 id="applications-title">One source for<br /><em>many applications.</em></h2></div><div><p className="product-applications-copy">We supply carbon brushes and related assemblies for major applications and industries, from everyday motor maintenance to high-current collection and specialized rotating equipment.</p><ul className="application-list">{applications.map((application) => <li key={application}>{application}</li>)}</ul><Link className="button button-primary" href="/contact">Discuss your requirement <span>→</span></Link></div></div></section>
     </main>

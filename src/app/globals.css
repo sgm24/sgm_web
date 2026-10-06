@@ -385,6 +385,16 @@ h2 em { color: var(--orange); font-style: normal; }
 .holder-gallery-item-1 { grid-column: span 5; }
 .holder-gallery-item-2 { grid-column: span 7; }
 .holder-gallery-item-3, .holder-gallery-item-4, .holder-gallery-item-5, .holder-gallery-item-6 { grid-column: span 3; min-height: 220px; }
+.carbon-brush-gallery-item figcaption { pointer-events: none; }
+.carbon-brush-gallery-trigger { background: transparent; border: 0; cursor: zoom-in; inset: 0; padding: 0; position: absolute; }
+.carbon-brush-gallery-trigger:focus-visible { outline: 3px solid var(--orange); outline-offset: -3px; z-index: 2; }
+.carbon-brush-lightbox { align-items: center; background: rgba(7, 15, 29, .94); display: flex; inset: 0; justify-content: center; padding: 64px 24px 24px; position: fixed; z-index: 1000; }
+.carbon-brush-lightbox-backdrop { background: transparent; border: 0; cursor: zoom-out; inset: 0; position: absolute; }
+.carbon-brush-lightbox-close { background: var(--orange); border: 0; color: #fff; cursor: pointer; font: inherit; font-size: 14px; padding: 10px 16px; position: absolute; right: 24px; top: 20px; z-index: 1; }
+.carbon-brush-lightbox-content { position: relative; z-index: 1; }
+.carbon-brush-lightbox-image { height: min(78vh, 900px); position: relative; width: min(92vw, 1200px); }
+.carbon-brush-lightbox-image img { object-fit: contain; }
+.carbon-brush-lightbox-content p { color: #fff; font-size: 14px; line-height: 1.5; margin: 12px 0 0; text-align: center; }
 .stoker-hero-image img { object-position: center; }
 .stoker-features { background: #fff; padding-top: 48px; }
 .stoker-features .product-section-heading { margin-left: auto; text-align: right; width: 50%; }
