@@ -2,7 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
-import CarbonBrushGallery from "./CarbonBrushGallery";
+import ProductImageViewer from "./ProductImageViewer";
+
+const carbonBrushImages = [
+  ["Carbon Brush.2.png", "Carbon brush assembly with braided copper lead"],
+  ["Carbon Brush.3.png", "Heavy-duty carbon brush with dual insulated leads"],
+  ["Carbon Brush.4.png", "Carbon brush grade with braided cable terminals"],
+  ["Carbon Brush 5.jpeg", "Carbon brush with black insulated connector and heavy cable"],
+  ["Carbon Brush.6.png", "Set of carbon brush blocks in multiple dimensions"],
+  ["CB6.jpg", "Carbon brush block with braided terminal cable"],
+  ["CB7.jpg", "Industrial carbon brushes with copper lead connections"],
+  ["IMG-20200213-WA0017 - Copy.jpg", "Carbon brush with ring terminal and cylindrical graphite core"],
+  ["Silver CB3.jpeg", "Silver-graphite carbon brush pair with braided leads"],
+  ["Carbon-Brush-Home.png", "Assorted industrial carbon brushes and assemblies"],
+];
+
+const galleryItemSizes = [1, 2, 3, 4, 5, 6, 2, 3, 4, 5];
 
 const grades = [
   ["01", "Natural Graphite Class", "Natural graphite undergoes prolonged heat treatment to deliver high surface-speed performance. These grades can produce more commutator wear than electrographite, but offer long life and operational stability when correctly matched to the machine."],
@@ -26,7 +41,26 @@ export default function CarbonBrush() {
       <section className="holder-gallery section" aria-labelledby="carbon-gallery-title">
         <div className="container">
           <div className="product-section-heading"><p className="eyebrow dark-eyebrow">Selected product range</p><h2 id="carbon-gallery-title">Real applications.<br /><em>Real performance.</em></h2></div>
-          <CarbonBrushGallery />
+          <div className="holder-gallery-grid carbon-brush-gallery-grid">
+            {carbonBrushImages.map(([src, alt], index) => {
+              const imagePath = `/products/carbon_brush/${encodeURIComponent(src)}`;
+
+              return (
+                <figure
+                  className={`holder-gallery-item holder-gallery-item-${galleryItemSizes[index]} carbon-brush-gallery-item`}
+                  key={src}
+                >
+                  <ProductImageViewer
+                    src={imagePath}
+                    alt={alt}
+                    sizes="(max-width: 800px) 100vw, 33vw"
+                    unoptimized={src === "CB7.jpg"}
+                  />
+                  <figcaption>{alt}</figcaption>
+                </figure>
+              );
+            })}
+          </div>
         </div>
       </section>
       <section className="product-grades section" aria-labelledby="grades-title"><div className="container"><div className="product-section-heading"><p className="eyebrow dark-eyebrow">Classes of brush grades</p><h2 id="grades-title">Made for the<br /><em>working conditions.</em></h2></div><div className="grade-grid">{grades.map(([number, title, text]) => <article className="grade-item" key={number}><span className="grade-number">{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>

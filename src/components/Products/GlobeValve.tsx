@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const features = [
   "Precise flow regulation and throttling",
@@ -228,10 +229,9 @@ export default function GlobeValve() {
                   className={`bearing-gallery-item bearing-gallery-item-${index + 1}`}
                   key={image.src}
                 >
-                  <Image
+                  <ProductImageViewer
                     src={image.src}
                     alt={image.alt}
-                    fill
                     sizes="(max-width: 800px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <figcaption>{image.caption}</figcaption>

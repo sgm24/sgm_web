@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const holderImages = [
   ["2(12.5)x32 mm.jpg", "IEC DC motor, size 2 tandem holder"],
@@ -51,7 +52,7 @@ export default function CarbonBrushHolder() {
       <section className="holder-gallery section" aria-labelledby="holder-gallery-title">
         <div className="container">
           <div className="product-section-heading"><p className="eyebrow dark-eyebrow">Selected configurations</p><h2 id="holder-gallery-title">Made for real<br /><em>working conditions.</em></h2></div>
-          <div className="holder-gallery-grid">{holderImages.map(([src, alt], index) => <figure className={`holder-gallery-item holder-gallery-item-${index + 1}`} key={src}><Image src={`/products/brush_holder/${src}`} alt={alt} fill sizes="(max-width: 800px) 100vw, 33vw" /><figcaption>{alt}</figcaption></figure>)}</div>
+          <div className="holder-gallery-grid">{holderImages.map(([src, alt], index) => <figure className={`holder-gallery-item holder-gallery-item-${index + 1}`} key={src}><ProductImageViewer src={`/products/brush_holder/${src}`} alt={alt} sizes="(max-width: 800px) 100vw, 33vw" /><figcaption>{alt}</figcaption></figure>)}</div>
         </div>
       </section>
 

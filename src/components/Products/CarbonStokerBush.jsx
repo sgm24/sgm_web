@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const features = [
   "Copper-impregnated carbon graphite construction",
@@ -119,8 +120,8 @@ export default function CarbonStokerBush() {
         <div className="container">
           <div className="product-section-heading"><p className="eyebrow dark-eyebrow">Product view</p><h2 id="stoker-gallery-title">Ready for the<br /><em>working environment.</em></h2></div>
           <div className="stoker-gallery-grid">
-            <figure className="stoker-gallery-item stoker-gallery-item-large"><Image src="/products/stoker_bush/image-1789747829098.png" alt="Finished carbon graphite stoker bush" fill sizes="(max-width: 800px) 100vw, 58vw" /><figcaption>Carbon graphite stoker bush</figcaption></figure>
-            <figure className="stoker-gallery-item"><Image src="/products/stoker_bush/image-1789747834093.png" alt="Copper impregnated carbon bush components" fill sizes="(max-width: 800px) 100vw, 42vw" /><figcaption>Available for OEM and replacement requirements</figcaption></figure>
+            <figure className="stoker-gallery-item stoker-gallery-item-large"><ProductImageViewer src="/products/stoker_bush/image-1789747829098.png" alt="Finished carbon graphite stoker bush" sizes="(max-width: 800px) 100vw, 58vw" /><figcaption>Carbon graphite stoker bush</figcaption></figure>
+            <figure className="stoker-gallery-item"><ProductImageViewer src="/products/stoker_bush/image-1789747834093.png" alt="Copper impregnated carbon bush components" sizes="(max-width: 800px) 100vw, 42vw" /><figcaption>Available for OEM and replacement requirements</figcaption></figure>
           </div>
         </div>
       </section>

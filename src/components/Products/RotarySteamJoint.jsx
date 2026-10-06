@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const applications = [
   "Steam Turbines",
@@ -115,10 +116,9 @@ export default function RotarySteamJoint() {
             </div>
             <div className="bearing-gallery-grid">
               <figure className="bearing-gallery-item rotary-steam-gallery-item">
-                <Image
+                <ProductImageViewer
                   src="/products/rotary_steam_joint/Rotary%20Steam%20Joint%20-2.png"
                   alt="Carbon and graphite rings for rotary steam joint assemblies"
-                  fill
                   sizes="(max-width: 800px) 100vw, 1000px"
                 />
                 <figcaption>Carbon and graphite sealing rings for rotary steam joint assemblies</figcaption>

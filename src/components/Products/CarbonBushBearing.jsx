@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const bearingImages = [
   ["1.jpg", "Carbon graphite bearing rings"],
@@ -66,7 +67,7 @@ export default function CarbonBushBearing() {
       <section className="bearing-gallery section" aria-labelledby="bearing-gallery-title">
         <div className="container">
           <div className="product-section-heading"><p className="eyebrow dark-eyebrow">Product range</p><h2 id="bearing-gallery-title">Configured for<br /><em>your application.</em></h2></div>
-          <div className="bearing-gallery-grid">{bearingImages.map(([src, alt], index) => <figure className={`bearing-gallery-item bearing-gallery-item-${index + 1}`} key={src}><Image src={`/products/carbon_bush_bearing/${src}`} alt={alt} fill sizes="(max-width: 800px) 100vw, 33vw" /><figcaption>{alt}</figcaption></figure>)}</div>
+          <div className="bearing-gallery-grid">{bearingImages.map(([src, alt], index) => <figure className={`bearing-gallery-item bearing-gallery-item-${index + 1}`} key={src}><ProductImageViewer src={`/products/carbon_bush_bearing/${src}`} alt={alt} sizes="(max-width: 800px) 100vw, 33vw" /><figcaption>{alt}</figcaption></figure>)}</div>
         </div>
       </section>
 

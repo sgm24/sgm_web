@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const tractionImages = [
   ["image-1789746923941.png", "Traction carbon brush holder assembly"],
@@ -49,7 +50,7 @@ export default function ComponentsForTractionApplication() {
       <section className="holder-gallery section traction-gallery" aria-labelledby="traction-gallery-title">
         <div className="container">
           <div className="product-section-heading"><p className="eyebrow dark-eyebrow">Traction application range</p><h2 id="traction-gallery-title">Specified for<br /><em>working service.</em></h2></div>
-          <div className="holder-gallery-grid">{tractionImages.map(([src, alt], index) => <figure className={`holder-gallery-item traction-gallery-item traction-gallery-item-${index + 1}`} key={src}><Image src={`/products/traction/${src}`} alt={alt} fill sizes="(max-width: 800px) 100vw, 50vw" /><figcaption>{alt}</figcaption></figure>)}</div>
+          <div className="holder-gallery-grid">{tractionImages.map(([src, alt], index) => <figure className={`holder-gallery-item traction-gallery-item traction-gallery-item-${index + 1}`} key={src}><ProductImageViewer src={`/products/traction/${src}`} alt={alt} sizes="(max-width: 800px) 100vw, 50vw" /><figcaption>{alt}</figcaption></figure>)}</div>
         </div>
       </section>
 

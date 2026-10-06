@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const types = [
   "Wedge Gate Valves",
@@ -239,10 +240,9 @@ export default function GateValve() {
             <div className="bearing-gallery-grid gate-valve-gallery-grid">
               {gallery.map((image) => (
                 <figure className="bearing-gallery-item gate-valve-gallery-item" key={image.src}>
-                  <Image
+                  <ProductImageViewer
                     src={image.src}
                     alt={image.alt}
-                    fill
                     sizes="(max-width: 800px) 100vw, 33vw"
                   />
                   <figcaption>{image.caption}</figcaption>

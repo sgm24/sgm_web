@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const benefits = [
   "Low friction for efficient sealing in rotating equipment",
@@ -81,7 +82,7 @@ export default function CarbonSeal() {
             <div className="bearing-gallery-grid">
               {gallery.map(([src, alt], index) => (
                 <figure className={`bearing-gallery-item bearing-gallery-item-${index + 1}`} key={src}>
-                  <Image src={`/products/carbon-seal/${src}`} alt={alt} fill sizes="(max-width: 800px) 100vw, 33vw" />
+                  <ProductImageViewer src={`/products/carbon-seal/${src}`} alt={alt} sizes="(max-width: 800px) 100vw, 33vw" />
                   <figcaption>{alt}</figcaption>
                 </figure>
               ))}

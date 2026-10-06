@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const features = [
   "Compact and lightweight design",
@@ -168,10 +169,9 @@ export default function ButterflyValve() {
             <div className="bearing-gallery-grid butterfly-gallery-grid">
               {gallery.map((image) => (
                 <figure className={image.className} key={image.src}>
-                  <Image
+                  <ProductImageViewer
                     src={image.src}
                     alt={image.alt}
-                    fill
                     sizes="(max-width: 800px) 100vw, 50vw"
                   />
                   <figcaption>{image.caption}</figcaption>

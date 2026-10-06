@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import Header from "../Header";
+import ProductImageViewer from "./ProductImageViewer";
 
 const features = [
   "High-quality carbon and graphite construction",
@@ -119,10 +120,9 @@ export default function GlandPackingRing() {
             <div className="bearing-gallery-grid">
               {productImages.map((image, index) => (
                 <figure className={`bearing-gallery-item gland-packing-gallery-item bearing-gallery-item-${index + 1}`} key={image.src}>
-                  <Image
+                  <ProductImageViewer
                     src={image.src}
                     alt={image.alt}
-                    fill
                     sizes="(max-width: 800px) 100vw, 50vw"
                   />
                   <figcaption>{image.caption}</figcaption>
