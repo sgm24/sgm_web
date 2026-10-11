@@ -18,12 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sgmcorporations.com"),
   title: { default: "SGM Corporations | Industrial Valves & Carbon Products", template: "%s | SGM Corporations" },
-  description: "SGM Corporations supplies carbon brushes, brush holders, carbon graphite bearings, stoker bushes, industrial valves and other carbon products from India to customers worldwide across sugar, power, steel, cement, mining and process industries.",
+  description: "SGM Corporations supplies carbon products and industrial valves from India to power, steel, sugar and process industries.",
   keywords: ["SGM Corporations", "carbon products India", "carbon products supplier", "carbon brushes", "carbon brush holders", "carbon graphite bearings", "carbon stoker bushes", "industrial valves", "sugar industry", "power generation", "steel industry", "mining industry", "global industrial supplier", "carbon brush pune"],
-  alternates: { canonical: "/" },
   openGraph: {
     title: "SGM Corporations | Industrial Supply, Made Dependable",
-    description: "Carbon products and industrial valves supplied from India to sugar, power, steel, cement, mining and process industries worldwide.",
+    description: "SGM Corporations supplies carbon products and industrial valves from India to power, steel, sugar and process industries.",
     url: "https://www.sgmcorporations.com/", siteName: "SGM Corporations", type: "website",
     images: [{ url: "/photos/BE_MastSm_Navy_Marine_Offshore.jpg", width: 1200, height: 800, alt: "Industrial process facility" }],
   },

@@ -3,7 +3,7 @@ import MainPage from "../components/MainPage";
 
 export const metadata: Metadata = {
   title: "Carbon Products & Industrial Valves Supplier in India",
-  description: "SGM Corporations supplies electrical and mechanical carbon products, carbon brushes, brush holders, carbon graphite bearings, stoker bushes and industrial valves from India to customers globally.",
+  description: "SGM Corporations supplies carbon products and industrial valves from India to power, steel, sugar and process industries.",
   keywords: [
     "carbon products supplier India",
     "industrial carbon products",
@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     "carbon brush holders India",
     "carbon graphite bearings",
     "carbon stoker bushes",
+    "carbon stoker bush",
+    "electrical carbon products",
+    "mechanical carbon products",
     "industrial valves supplier India",
     "sugar industry carbon products",
     "power plant carbon products",
