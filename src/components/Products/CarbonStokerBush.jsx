@@ -48,25 +48,50 @@ export default function CarbonStokerBush() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Product",
-        name: "Carbon Graphite Stoker Bush",
-        description: "Copper-impregnated carbon graphite stoker bush for travelling grate, chain-grate and waste heat recovery boiler applications.",
-        image: [
-          `${siteUrl}/products/stoker_bush/image-1789747829098.png`,
-          `${siteUrl}/products/stoker_bush/image-1789747834093.png`,
-        ],
-        material: "Copper-impregnated carbon graphite",
-        category: "Boiler stoker bush bearing",
-        brand: { "@type": "Brand", name: "SGM Corporations" },
-        manufacturer: {
-          "@type": "Organization",
-          name: "SGM Corporations",
-          url: siteUrl,
-        },
-        url: pageUrl,
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: `${siteUrl}/`,
+        name: "SGM Corporations",
       },
       {
+        "@type": "WebPage",
+        "@id": `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: "Carbon Stoker Bush for Travelling Grate Boilers | SGM Corporations",
+        description: "Copper-impregnated carbon graphite stoker bushes for travelling grate and waste heat recovery boilers. SGM supports OEM and replacement requirements across India.",
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/products/stoker_bush/image-1789747829098.png`,
+        },
+        breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+        mainEntity: {
+          "@type": "Thing",
+          name: "Carbon graphite stoker bush",
+          description: "Copper-impregnated carbon graphite bush bearing for travelling-grate, chain-grate and waste heat recovery boiler applications.",
+        },
+      },
+      // {
+      //   "@type": "Product",
+      //   name: "Carbon Graphite Stoker Bush",
+      //   description: "Copper-impregnated carbon graphite stoker bush for travelling grate, chain-grate and waste heat recovery boiler applications.",
+      //   image: [
+      //     `${siteUrl}/products/stoker_bush/image-1789747829098.png`,
+      //     `${siteUrl}/products/stoker_bush/image-1789747834093.png`,
+      //   ],
+      //   material: "Copper-impregnated carbon graphite",
+      //   category: "Boiler stoker bush bearing",
+      //   brand: { "@type": "Brand", name: "SGM Corporations" },
+      //   manufacturer: {
+      //     "@type": "Organization",
+      //     name: "SGM Corporations",
+      //     url: siteUrl,
+      //   },
+      //   url: pageUrl,
+      // },
+      {
         "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
           { "@type": "ListItem", position: 2, name: "Products", item: `${siteUrl}/#products` },
@@ -75,6 +100,7 @@ export default function CarbonStokerBush() {
       },
       {
         "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
         mainEntity: faqs.map(({ question, answer }) => ({
           "@type": "Question",
           name: question,
