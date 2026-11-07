@@ -2,6 +2,7 @@ import Clients from "./Clients";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./Header";
+import HomepageDiwaliPopup from "./HomepageDiwaliPopup";
 import Hero from "./Hero";
 import Industries from "./Industries";
 import Intro from "./Intro";
@@ -40,6 +41,7 @@ export default function MainPage() {
 	return (
 		<>
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+			<HomepageDiwaliPopup />
 			<Header />
 			<main id="top">
 				<Hero asset={asset} />

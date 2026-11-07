@@ -1111,3 +1111,159 @@ h2 em { color: var(--orange); font-style: normal; }
 	.about-copy p { margin-bottom: 14px; }
 	.about-breadcrumb { font-size: 12px; gap: 8px; }
 }
+
+	.diwali-popup-backdrop {
+		align-items: center;
+		background: rgba(8, 13, 30, .78);
+		backdrop-filter: blur(7px);
+		display: flex;
+		inset: 0;
+		justify-content: center;
+		overflow-y: auto;
+		padding: 24px;
+		position: fixed;
+		z-index: 100;
+	}
+	.diwali-popup {
+		background:
+			radial-gradient(ellipse at 50% 0, rgba(247, 171, 75, .2), transparent 42%),
+			radial-gradient(circle at 0 100%, rgba(116, 56, 103, .34), transparent 40%),
+			linear-gradient(145deg, #1a2040, #11172d 75%);
+		border: 1px solid rgba(255, 218, 145, .55);
+		border-radius: 22px;
+		box-shadow: 0 30px 100px rgba(0, 0, 0, .45), inset 0 0 0 6px rgba(255, 255, 255, .035);
+		color: #fff8e9;
+		margin: auto;
+		max-width: 520px;
+		overflow: hidden;
+		padding: 42px 48px 32px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+	.diwali-popup::before,
+	.diwali-popup::after {
+		border: 1px solid rgba(255, 220, 159, .18);
+		border-radius: 50%;
+		content: "";
+		height: 240px;
+		left: 50%;
+		pointer-events: none;
+		position: absolute;
+		top: -194px;
+		transform: translateX(-50%);
+		width: 340px;
+	}
+	.diwali-popup::after { height: 282px; top: -215px; width: 400px; }
+	.diwali-popup-spark {
+		color: #ffe3a1;
+		font-size: 24px;
+		position: absolute;
+		text-shadow: 0 0 18px rgba(255, 197, 104, .8);
+	}
+	.diwali-popup-spark-left { left: 9%; top: 36%; }
+	.diwali-popup-spark-right { right: 9%; top: 58%; }
+	.diwali-popup-close {
+		align-items: center;
+		background: rgba(255, 255, 255, .09);
+		border: 1px solid rgba(255, 255, 255, .2);
+		border-radius: 50%;
+		color: #fff8e9;
+		cursor: pointer;
+		display: flex;
+		font: 300 26px/1 'DM Sans', sans-serif;
+		height: 38px;
+		justify-content: center;
+		padding: 0 0 3px;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		transition: background .2s, transform .2s;
+		width: 38px;
+		z-index: 1;
+	}
+	.diwali-popup-close:hover { background: rgba(255, 255, 255, .18); transform: rotate(90deg); }
+	.diwali-popup-close:focus-visible,
+	.diwali-popup-cta:focus-visible { outline: 3px solid #ffe39c; outline-offset: 4px; }
+	.diwali-popup-logo {
+		background: #fff;
+		border-radius: 10px;
+		display: inline-flex;
+		margin-bottom: 26px;
+		padding: 7px 14px;
+		position: relative;
+		z-index: 1;
+	}
+	.diwali-popup-logo img { display: block; height: auto; width: 126px; }
+	.diwali-popup-eyebrow {
+		color: #f5cb83;
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: .2em;
+		margin: 0 0 10px;
+		text-transform: uppercase;
+	}
+	.diwali-popup h2 {
+		color: #ffe3a1;
+		font: 600 clamp(38px, 9vw, 56px)/1.1 'Space Grotesk', sans-serif;
+		letter-spacing: -.04em;
+		margin: 0;
+		text-shadow: 0 3px 28px rgba(255, 168, 63, .28);
+	}
+	.diwali-popup-message {
+		color: rgba(255, 248, 233, .82);
+		font-size: 15px;
+		line-height: 1.7;
+		margin: 16px auto 10px;
+		max-width: 380px;
+	}
+	.diwali-popup-diyas {
+		align-items: center;
+		display: flex;
+		gap: 12px;
+		justify-content: center;
+		margin: 8px auto 18px;
+	}
+	.diwali-popup-diyas svg {
+		filter: drop-shadow(0 0 12px rgba(255, 166, 68, .55));
+		height: 50px;
+		width: 50px;
+	}
+	.diwali-popup-diyas svg:nth-child(2) { height: 64px; width: 64px; }
+	.diwali-popup-cta {
+		align-items: center;
+		background: linear-gradient(110deg, #ffe4a0, #f8b65b);
+		border: 0;
+		border-radius: 999px;
+		box-shadow: 0 8px 26px rgba(228, 146, 54, .24);
+		color: #28203a;
+		cursor: pointer;
+		display: inline-flex;
+		font: 700 14px 'DM Sans', sans-serif;
+		gap: 16px;
+		justify-content: center;
+		min-height: 48px;
+		padding: 0 24px;
+		transition: box-shadow .2s, transform .2s;
+	}
+	.diwali-popup-cta:hover { box-shadow: 0 12px 30px rgba(228, 146, 54, .38); transform: translateY(-2px); }
+	.diwali-popup-cta span { font-size: 19px; line-height: 1; }
+	.diwali-popup-signoff {
+		color: rgba(255, 248, 233, .55);
+		font-size: 11px;
+		letter-spacing: .04em;
+		margin: 22px 0 0;
+	}
+
+	@media (max-width: 480px) {
+		.diwali-popup-backdrop { padding: 18px; }
+		.diwali-popup { border-radius: 18px; padding: 38px 23px 26px; }
+		.diwali-popup-close { right: 12px; top: 12px; }
+		.diwali-popup-logo { margin-bottom: 22px; }
+		.diwali-popup-message { font-size: 14px; }
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.diwali-popup-close,
+		.diwali-popup-cta { transition: none; }
+	}
